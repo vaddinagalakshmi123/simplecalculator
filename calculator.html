@@ -1,0 +1,44 @@
+<!doctypehtml>
+<html>
+<head>
+ <title>calculator</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,intial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src="javascript.js"></script>
+</head>
+<body>
+<table class="cal">
+<tr>
+<td colspan="5">
+<input type="text" id="display"></td>
+</td>
+<tr>
+<td><input type="button" value="7" onclick="addToDisplay('7')"></td>
+<td><input type="button" value="8" onclick="addToDisplay('8')"></td>
+<td><input type="button" value="9" onclick="addToDisplay('9')"></td>
+<td><input type="button" value="+" onclick="addToDisplay('+')"></td>
+<td><input type="button" value="-" onclick="addToDisplay('-')"></td>
+</tr>
+<tr>
+<td><input type="button" value="4" onclick="addToDisplay('4')"></td>
+<td><input type="button" value="5" onclick="addToDisplay('5')"></td>
+<td><input type="button" value="6" onclick="addToDisplay('6')"></td>
+<td><input type="button" value="*" onclick="addToDisplay('*')"></td>
+<td><input type="button" value="/" onclick="addToDisplay('/')"></td>
+</tr>
+<tr>
+<td><input type="button" value="1" onclick="addToDisplay('1')"></td>
+<td><input type="button" value="2" onclick="addToDisplay('2')"></td>
+<td><input type="button" value="3" onclick="addToDisplay('3')"></td>
+<td><input type="button" value="." onclick="addToDisplay('.')"></td>
+<td><input type="button" value="c" onclick="Clear()"></td>
+</tr>
+<tr>
+<td><input type="button" value="0" onclick="addToDisplay('0')"></td>
+<td colspan="2"><input type="button" value="x" id="x" onclick="back()"></td>
+<td colspan="2"><input type="button" value="=" id="cx" onclick="calculate()"></td>
+</td>
+</table>
+</body>
+</html>
